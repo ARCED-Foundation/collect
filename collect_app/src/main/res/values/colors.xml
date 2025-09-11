@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryLight">#3e9fcc</color>
-    <color name="colorOnPrimaryLight">#ffffff</color>
-    <color name="colorSurfaceLight">#ffffff</color>
+<!--    <color name="colorPrimaryLight">#3e9fcc</color>-->
+<!--    <color name="colorOnPrimaryLight">#ffffff</color>-->
+<!--    <color name="colorSurfaceLight">#ffffff</color>-->
 
-    <color name="colorPrimaryDark">#4cbcf0</color>
-    <color name="colorOnPrimaryDark">#003547</color>
+<!--    <color name="colorPrimaryDark">#4cbcf0</color>-->
+<!--    <color name="colorOnPrimaryDark">#003547</color>-->
+<!--    <color name="colorSurfaceDark">#001117</color>-->
+
+<!--the new  colors-->
+<!--    <color name="colorPrimaryLight">#d4a81e</color>-->
+    <color name="colorPrimaryLight">#d4a81e</color>
+<!--    <color name="colorPrimaryLight">#c2a05b</color>-->
+    <color name="colorOnPrimaryLight">#ffffff</color>
+    <color name="colorSurfaceLight">#f7f7f7</color>
+    <color name="colorHeadlineLight">#facb1e</color>
+
+
+<!--    <color name="colorPrimaryDark">#facb1e</color>-->
+<!--    <color name="colorPrimaryDark">#       ecd058</color>-->
+    <color name="colorPrimaryDark">#facb1e</color>
+<!--    <color name="colorOnPrimaryDark">#7A6706</color>-->
+    <color name="colorOnPrimaryDark">#665604</color>
+<!--    <color name="colorOnPrimaryDark">#594B04</color>-->
     <color name="colorSurfaceDark">#001117</color>
+    <color name="colorHeadlineDark">#d4a81e</color>
+
+
+    <color name="colorLoadingPage">#EBBE0F</color>
+
 </resources>

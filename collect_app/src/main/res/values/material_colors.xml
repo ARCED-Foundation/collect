@@ -2,9 +2,14 @@
 <resources>
     <color name="colorPrimary">@color/colorPrimaryLight</color>
     <color name="colorOnPrimary">@color/colorOnPrimaryLight</color>
-    <color name="colorPrimaryContainer">#bfe9ff</color>
-    <color name="colorOnPrimaryContainer">#001f2a</color>
-    <color name="colorPrimaryInverse">#6dd2ff</color>
+
+
+<!--    <color name="colorPrimaryContainer">#bfe9ff</color>-->
+<!--    <color name="colorOnPrimaryContainer">#001f2a</color>-->
+<!--    <color name="colorPrimaryInverse">#6dd2ff</color>-->
+    <color name="colorPrimaryContainer">#fff7b2</color>
+    <color name="colorOnPrimaryContainer">#2a1f00</color>
+    <color name="colorPrimaryInverse">#ffc107</color>
 
     <color name="colorError">#ba1a1a</color>
     <!-- <color name="colorOnError">#ffffff</color> -->
@@ -13,15 +18,18 @@
 
     <color name="colorSurface">@color/colorSurfaceLight</color>
     <color name="colorSurfaceVariant">#dce3e9</color>
-    <color name="colorOnSurface">#001f2a</color>
+<!--    <color name="colorOnSurface">#001f2a</color>-->
+    <color name="colorOnSurface">#2a1f00</color>
     <color name="colorOnSurfaceVariant">#40484c</color>
     <color name="colorSurfaceContainerLowest">#ffffff</color>
     <color name="colorSurfaceContainerLow">#f7f7f7</color>
     <color name="colorSurfaceContainer">#f7f7f7</color>
     <color name="colorSurfaceContainerHigh">#f7f7f7</color>
     <color name="colorSurfaceContainerHighest">#f2f2f2</color>
-    <color name="colorSurfaceInverse">#003547</color>
-    <color name="colorOnSurfaceInverse">#E1F4FF</color>
+<!--    <color name="colorSurfaceInverse">#003547</color>-->
+    <color name="colorSurfaceInverse">#473800</color>
+<!--    <color name="colorOnSurfaceInverse">#E1F4FF</color>-->
+    <color name="colorOnSurfaceInverse">#FFF8CC</color>
 
     <bool name="lightStatusBar">true</bool>
 </resources>

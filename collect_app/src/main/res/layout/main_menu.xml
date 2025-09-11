@@ -15,7 +15,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:paddingBottom="@dimen/margin_standard"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -97,18 +97,32 @@
                 app:layout_constraintTop_toBottomOf="@id/get_forms"
                 app:name="@string/manage_files" />
 
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/collect_app_name"
+                android:src="@drawable/arced_full_text_logo"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:layout_marginBottom="@dimen/margin_standard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/manage_forms"
+                app:layout_constraintBottom_toTopOf="@id/app_name" />
+
             <TextView
                 android:id="@+id/app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_standard"
                 android:textAppearance="?textAppearanceBody1"
                 android:textColor="@color/color_on_surface_medium_emphasis"
-                android:layout_marginTop="@dimen/margin_standard"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/manage_forms"
-                tools:text="ODK Collect v2022.3" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="ARCED Collect v2022.3" />
 
             <TextView
                 android:id="@+id/version_sha"
