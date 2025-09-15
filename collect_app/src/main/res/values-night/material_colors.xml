@@ -3,13 +3,6 @@
     <color name="colorPrimary">@color/colorPrimaryDark</color>
     <color name="colorOnPrimary">@color/colorOnPrimaryDark</color>
 
-    <color name="colorHeadline">@color/colorHeadlineDark</color>
-
-
-<!--    <color name="colorPrimaryContainer">#004d65</color>-->
-<!--    <color name="colorOnPrimaryContainer">#bfe9ff</color>-->
-<!--    <color name="colorPrimaryInverse">#006689</color>-->
-
     <color name="colorPrimaryContainer">#4d3f00</color>
     <color name="colorOnPrimaryContainer">#fff7b2</color>
     <color name="colorPrimaryInverse">#b08900</color>
