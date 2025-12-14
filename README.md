@@ -229,6 +229,60 @@ Devices that @getodk/testers have available for testing are as follows:
 * Pixel 3a 4GB - Android 12
 * Huawei Y560-L01 1GB - Android 5.1
 
+## ARCED Collect Version Management
+
+ARCED Collect uses a custom versioning scheme that builds upon ODK releases:
+
+### Version Format Convention
+
+For ARCED-specific releases, use the format: `v2025.3.0-beta.3.arced.1.0`
+
+**Breakdown**:
+- `v2025.3.0` - Base version (aligned with ODK release cycle)
+- `beta.3` - Beta number (matches ODK release)
+- `arced.1.0` - ARCED-specific suffix (increment for ARCED changes)
+
+### Version Updates for New Releases
+
+When creating a new ARCED release:
+
+1. **Update version in `collect_app/build.gradle`**:
+   ```gradle
+   def getVersionName = { ->
+       // Update this line for new version
+       return "v2025.3.0-beta.3.arced.1.0"
+   }
+   ```
+
+2. **Update version code** if needed (currently 60001):
+   ```gradle
+   versionCode project.hasProperty('versionCode') ? project.getProperties()['versionCode'].toInteger() : 60001
+   ```
+
+3. **Build ARCED release**:
+   ```bash
+   ./gradlew assembleSelfSignedRelease -Dorg.gradle.jvmargs=-Xmx4g
+   ```
+
+4. **Verify output**: APK should be named `ARCED-Collect-v2025.3.0-beta.3.arced.1.0.apk`
+
+### Base Release vs ARCED Changes
+
+- **Base Release**: Comes from ODK release cycle (version format: `v2025.3.0-beta.3`)
+- **ARCED Changes**: Add `.arced.1.0` suffix to indicate ARCED-specific modifications
+- **Version Code**: Increment independently for ARCED releases (starting from 60001)
+
+### Building ARCED Releases
+
+Use the `selfSignedRelease` variant for ARCED-specific builds:
+```bash
+# Build ARCED release
+./gradlew assembleSelfSignedRelease -Dorg.gradle.jvmargs=-Xmx4g
+
+# Verify version display in app footer
+# Should show: "ARCED Collect v2025.3.0 Beta 3 ARCED 1.0"
+```
+
 ## Creating signed releases for Google Play Store
 Maintainers keep a folder with a clean checkout of the code and use [jenv.be](https://www.jenv.be) in that folder to ensure compilation with Java 17.
 
