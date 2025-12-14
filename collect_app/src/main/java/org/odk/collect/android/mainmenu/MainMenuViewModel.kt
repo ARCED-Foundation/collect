@@ -42,6 +42,9 @@ class MainMenuViewModel(
     val version: String
         get() = versionInformation.versionToDisplay
 
+    val versionWithBranding: String
+        get() = versionInformation.versionToDisplayWithBranding
+
     val versionCommitDescription: String?
         get() {
             var commitDescription = ""

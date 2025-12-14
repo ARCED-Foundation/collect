@@ -61,6 +61,23 @@ public class VersionInformation {
         }
     }
 
+    public String getVersionToDisplayWithBranding() {
+        String baseVersion = getVersionToDisplay();
+        String arcedVersion = "";
+
+        // Extract ARCED version from the full version description
+        String[] components = getVersionDescriptionComponents();
+        if (components.length > 3) {
+            // Format: v2025.3.0-beta.3.arced.1.0
+            // components[3] would be "arced.1.0"
+            if (components[3].startsWith("arced")) {
+                arcedVersion = "ARCED " + components[3].substring(6); // Remove "arced." prefix
+            }
+        }
+
+        return String.format("ARCED Collect %s %s", baseVersion, arcedVersion).trim();
+    }
+
     public boolean isRelease() {
         return getVersionDescriptionComponents().length == 1;
     }
