@@ -45,23 +45,8 @@ def getMasterCommitCount = { ->
 }
 
 def getVersionName = { ->
-    try {
-        def stdout = new ByteArrayOutputStream()
-        exec {
-            switch (ant.properties.os) {
-                case 'windows':
-                    commandLine 'cmd', '/c', 'git', 'describe', '--tags', '--dirty', '--always'
-                    break
-                case 'unix':
-                    commandLine 'git', 'describe', '--tags', '--dirty', '--always'
-                    break
-            }
-            standardOutput = stdout
-        }
-        return stdout.toString().trim()
-    } catch (ignored) {
-        return null
-    }
+    // Custom version for ARCED Collect: v2025.3.0-beta.3.arced.1.0
+    return "v2025.3.0-beta.3.arced.1.0"
 }
 
 def secrets = getSecrets()
@@ -85,11 +70,11 @@ android {
         applicationId('org.odk.collect.android')  //change here for forks
         minSdk libs.versions.minSdk.get().toInteger()
         targetSdkVersion libs.versions.targetSdk.get().toInteger()
-        versionCode project.hasProperty('versionCode') ? project.getProperties()['versionCode'].toInteger() : 5112
+        versionCode project.hasProperty('versionCode') ? project.getProperties()['versionCode'].toInteger() : 60001
         versionName getVersionName()
         testInstrumentationRunner('androidx.test.runner.AndroidJUnitRunner')
         vectorDrawables.useSupportLibrary = true
-        archivesBaseName = 'ODK-Collect'
+        archivesBaseName = 'ARCED-Collect'
     }
 
     signingConfigs {

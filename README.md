@@ -1,13 +1,12 @@
-# ODK Collect
+# ARCED Collect
 
 ![Platform](https://img.shields.io/badge/platform-Android-blue.svg)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build status](https://circleci.com/gh/getodk/collect.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/getodk/collect)
-[![Slack](https://img.shields.io/badge/chat-on%20slack-brightgreen)](https://slack.getodk.org)
 
-ODK Collect is an Android app for filling out forms. It is designed to be used in resource-constrained environments with challenges such as unreliable connectivity or power infrastructure. ODK Collect is part the ODK project, a free and open-source set of tools which help organizations author, field, and manage mobile data collection solutions. Learn more about ODK and its history [here](https://getodk.org/) and read about example ODK deployments [here](https://forum.getodk.org/c/showcase).
+**ARCED Collect** is a fork of ODK Collect, customized for ARCED Foundation (www.arced.foundation). It is an Android app for filling out forms, designed to be used in resource-constrained environments with challenges such as unreliable connectivity or power infrastructure.
 
-ODK Collect renders forms that are compliant with the [ODK XForms standard](https://getodk.github.io/xforms-spec/), a subset of the [XForms 1.1 standard](https://www.w3.org/TR/xforms/) with some extensions. The form parsing is done by the [JavaRosa library](https://github.com/getodk/javarosa) which Collect includes as a dependency.
+ARCED Collect renders forms that are compliant with the [ODK XForms standard](https://getodk.github.io/xforms-spec/), a subset of the [XForms 1.1 standard](https://www.w3.org/TR/xforms/) with some extensions. The form parsing is done by the [JavaRosa library](https://github.com/getodk/javarosa) which Collect includes as a dependency.
 
 Please note that the `master` branch reflects ongoing development and is not production-ready.
 
@@ -28,11 +27,11 @@ Please note that the `master` branch reflects ongoing development and is not pro
   * [Test devices](#test-devices)
 * [Creating signed releases for Google Play Store](#creating-signed-releases-for-google-play-store)
 
-## Learn more about ODK Collect
-* ODK website: [https://getodk.org](https://getodk.org)
+## Learn more about ARCED Collect
+* ARCED Foundation: [https://arced.foundation](https://arced.foundation)
+* ODK Collect (original project): [https://getodk.org](https://getodk.org)
 * ODK Collect usage documentation: [https://docs.getodk.org/collect-intro/](https://docs.getodk.org/collect-intro/)
 * ODK forum: [https://forum.getodk.org](https://forum.getodk.org)
-* ODK developer Slack chat: [https://slack.getodk.org](https://slack.getodk.org)
 
 ## Release cycle
 
