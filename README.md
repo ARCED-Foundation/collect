@@ -10,6 +10,14 @@ ARCED Collect renders forms that are compliant with the [ODK XForms standard](ht
 
 Please note that the `master` branch reflects ongoing development and is not production-ready.
 
+**Scan the QR code to download ARCED Collect**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ARCED-Foundation/collect/arced_collect/ARCED_collect_QR.png"
+       alt="ARCED Collect QR Code"
+       width="200">
+</p>
+
 ## Table of Contents
 * [Learn more about ODK Collect](#learn-more-about-odk-collect)
 * [Release cycle](#release-cycle)
